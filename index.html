@@ -1,136 +1,146 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Niaz Executive Consultancy</title>
-  <meta name="description" content="Business consultancy helping you open, develop, and run your business smoothly. Try our free Business Assistant Software." />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consistent Business Assistant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+
+        body { background: #f4f4f4; color: #222; }
+
+        header {
+            background: #0d1b2a;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img { height: 60px; width: 60px; border-radius: 8px; }
+
+        header h1 { color: #fff; font-size: 26px; letter-spacing: 1px; }
+
+        nav a {
+            color: #fff;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        /* Hero / Create Your Office Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1529333166437-7750a6dd5a70');
+            background-size: cover;
+            background-position: center;
+            padding: 120px 40px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .hero p { font-size: 20px; margin-bottom: 30px; }
+
+        .hero a {
+            padding: 15px 30px;
+            background: #e0a800;
+            color: #000;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 6px;
+        }
+
+        .container { padding: 60px 40px; }
+
+        .section-title { font-size: 28px; margin-bottom: 20px; border-left: 5px solid #0d1b2a; padding-left: 10px; }
+
+        .services, .offers, .benefits {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        ul { margin-left: 20px; line-height: 1.7; }
+
+        footer {
+            background: #0d1b2a;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
-  <!-- Navbar -->
-  <header class="site-header" role="banner">
-    <nav class="navbar" aria-label="Primary">
-      <div class="container nav-inner">
-        <a class="brand" href="#home" aria-label="Niaz Business Consultancy home">
-          <img src="assets/logo.png" alt="Niaz Business Consultancy logo" loading="eager" />
-        </a>
-        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </button>
-        <div id="primary-menu" class="nav-links">
-          <a class="btn btn-outline" href="#software" title="Business Assistant Software Free">Business Assistant Software Free</a>
-        </div>
-      </div>
-    </nav>
-  </header>
+    <header>
+        <img src="logo.png" alt="Logo" />
+        <h1>Consistent Business Assistant</h1>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#offers">Offers</a>
+            <a href="#benefits">Benefits</a>
+        </nav>
+    </header>
 
-  <main id="home" tabindex="-1">
-    <!-- Hero / Cover Photo Section -->
-    <section class="hero" aria-label="Cover image">
-      <!-- Replace the src with your cover photo file path, e.g., assets/cover.jpg -->
-      <img class="hero-img" src="assets/cover.jpg" alt="Business landscape cover image" />
-      <div class="hero-overlay">
-        <div class="container">
-          <h1>Niaz Executive Consultancy</h1>
-          <p>Build, develop, and run your business with confidence.</p>
-          <a class="btn btn-primary" href="#software">Explore Free Business Assistant Software</a>
-        </div>
-      </div>
+    <section class="hero">
+        <h2>Create Your Office</h2>
+        <p>Virtual Office | Keep Going Forward</p>
+        <a href="#create-office">Start Now</a>
     </section>
 
-    <!-- Software Benefits Section -->
-    <section id="software" class="section" aria-labelledby="software-title">
-      <div class="container">
-        <h2 id="software-title">Business Assistant Software — Free</h2>
-        <p class="lead">
-          <strong>Niaz Business Consultancy Business Assistant Software</strong> is a web-based solution designed to help you
-          <em>open, develop, and run</em> a business smoothly. It empowers owners to handle operations precisely and brings
-          accuracy across <em>management</em>, <em>finance</em>, and <em>marketing</em> departments.
-        </p>
+    <div class="container">
+        <section id="services" class="services">
+            <h3 class="section-title">Services</h3>
+            <p>Virtual office for management, marketing and finance department</p>
+        </section>
 
-        <div class="benefits-grid" role="list">
-          <article class="benefit-card" role="listitem">
-            <h3>Open</h3>
-            <p>Turn ideas into reality with guided setup, checklists, and compliance-ready templates for a confident start.</p>
-          </article>
-          <article class="benefit-card" role="listitem">
-            <h3>Develop</h3>
-            <p>Plan and iterate faster using goal tracking, KPIs, and analytics to grow your business intelligently.</p>
-          </article>
-          <article class="benefit-card" role="listitem">
-            <h3>Run</h3>
-            <p>Operate day-to-day with clarity—task management, schedules, and notifications keep teams aligned.</p>
-          </article>
-          <article class="benefit-card" role="listitem">
-            <h3>Accuracy in Management</h3>
-            <p>Dashboards consolidate data for decisions; permissions keep information secure and organized.</p>
-          </article>
-          <article class="benefit-card" role="listitem">
-            <h3>Finance</h3>
-            <p>Track cash flow, budgets, invoices, and forecasts to maintain financial health and transparency.</p>
-          </article>
-          <article class="benefit-card" role="listitem">
-            <h3>Marketing</h3>
-            <p>Measure campaigns, leads, and conversion performance to find what works and scale your reach.</p>
-          </article>
-        </div>
+        <section id="offers" class="offers">
+            <h3 class="section-title">Offers</h3>
+            <ul>
+                <li>Free for one month, no cards needed</li>
+                <li>Pay 9 dollars monthly after one free month</li>
+            </ul>
+        </section>
 
-        <!-- Big hyperlink button -->
-        <div class="cta-block">
-          <!-- Replace the href with your actual software link -->
-          <a class="btn btn-xxl btn-primary" href="#" id="get-software-link">Niaz Business Consultancy Business Assistant Software for Free</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section" aria-labelledby="contact-title">
-      <div class="container">
-        <h2 id="contact-title">Contact Us</h2>
-        <form id="contact-form" novalidate>
-          <div class="form-grid">
-            <div class="form-field">
-              <label for="fullName">Full Name</label>
-              <input type="text" id="fullName" name="fullName" placeholder="e.g., MD NIAZ AL MOTIN" required />
-              <small class="error" id="nameError" aria-live="polite"></small>
-            </div>
-            <div class="form-field">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="you@example.com" required />
-              <small class="error" id="emailError" aria-live="polite"></small>
-            </div>
-            <div class="form-field full">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="6" placeholder="Tell us about your business or what you need help with" required></textarea>
-              <small class="error" id="messageError" aria-live="polite"></small>
-            </div>
-          </div>
-          <div class="form-actions">
-            <button type="submit" class="btn btn-primary">Send Message</button>
-          </div>
-        </form>
-        <p class="form-note">We reply within 1–2 business days.</p>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> Niaz Business Consultancy. All rights reserved.</p>
-      <nav aria-label="Footer">
-        <a href="#software">Software</a>
-        <a href="#contact">Contact</a>
-      </nav>
+        <section id="benefits" class="benefits">
+            <h3 class="section-title">Benefits</h3>
+            <ul>
+                <li>No need of physical office</li>
+                <li>Store your financial documents</li>
+                <li>Prepare accounting cycle by input journal entry</li>
+                <li>Financial Analysis</li>
+                <li>Marketing reports and development strategies</li>
+                <li>Management reports and development strategies</li>
+            </ul>
+        </section>
     </div>
-  </footer>
 
-  <script src="script.js"></script>
+    <footer>
+        Consistent Business Assistant | Keep Going Forward
+    </footer>
+
+    <script>
+        // Basic scroll interaction
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const section = document.querySelector(this.getAttribute('href'));
+                if(section) {
+                    window.scrollTo({ top: section.offsetTop - 60, behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
