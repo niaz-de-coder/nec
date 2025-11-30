@@ -1,203 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consistent Business Assistant</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
-
-        body { background: #f4f4f4; color: #222; }
-
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
         header {
-            background: #0d1b2a;
-            padding: 20px 40px;
+            background-color: #1a1a1a;
+            padding: 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-
-        header img { height: 60px; width: 60px; border-radius: 8px; }
-
-        header h1 { color: #fff; font-size: 26px; letter-spacing: 1px; }
-
-        nav a {
+        header img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+        header nav a {
             color: #fff;
             margin-left: 20px;
             text-decoration: none;
             font-size: 16px;
-            font-weight: bold;
         }
-
-        /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1529333166437-7750a6dd5a70');
+            background-image: url('https://plus.unsplash.com/premium_photo-1672423154405-5fd922c11af2?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
             background-size: cover;
             background-position: center;
-            padding: 120px 40px;
+            padding: 120px 20px;
             text-align: center;
-            color: #fff;
+            color: white;
         }
-
-        .hero h2 {
-            font-size: 48px;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
         }
-
-        .hero p { font-size: 20px; margin-bottom: 30px; }
-
-        .hero a {
-            padding: 15px 30px;
-            background: #e0a800;
-            color: #000;
-            text-decoration: none;
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        .hero button {
+            background-color: #ffcc00;
+            padding: 14px 30px;
             font-size: 18px;
-            font-weight: bold;
+            border: none;
             border-radius: 6px;
+            cursor: pointer;
         }
-
-        .container { padding: 60px 40px; }
-
-        .section-title { font-size: 28px; margin-bottom: 20px; border-left: 5px solid #0d1b2a; padding-left: 10px; }
-
-        /* Card Grid Layout */
-        .card-grid {
+        .container {
+            width: 90%;
+            margin: 40px auto;
+        }
+        h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .box-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+            gap: 25px;
         }
-
-        .card {
-            background: #fff;
-            padding: 25px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-        }
-
-        .card i {
-            font-size: 40px;
-            margin-bottom: 15px;
-            color: #0d1b2a;
-        }
-
-        /* Spacing Between Sections */
-        section { margin-bottom: 80px; }
-
-        footer {
-            background: #0d1b2a;
+        .box {
+            background-color: #fff;
             padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
             text-align: center;
-            color: #fff;
-            margin-top: 40px;
+        }
+        .box img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 15px;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="assets/logo.png" alt="Logo" />
-        <h1>Consistent Business Assistant</h1>
+        <img src="logo.png" alt="Logo">
         <nav>
             <a href="#services">Services</a>
-            <a href="#offers">Offers</a>
             <a href="#benefits">Benefits</a>
+            <a href="#offers">Offers</a>
         </nav>
     </header>
 
     <section class="hero">
-        <h2>Create Your Office</h2>
-        <p>Virtual Office | Keep Going Forward</p>
-        <a href="#create-office">Start Now</a>
+        <h1>Consistent Business Assistant</h1>
+        <p>Keep Going Forward</p>
+        <button onclick="location.href='create-office.html'">Create Your Office</button>
     </section>
 
-    <div class="container">
-
-        <!-- SERVICES -->
-        <section id="services">
-            <h3 class="section-title">Services</h3>
-            <div class="card-grid">
-                <div class="card">
-                    <i class="fa-solid fa-users"></i>
-                    <h4>Management Department</h4>
-                </div>
-                <div class="card">
-                    <i class="fa-solid fa-bullhorn"></i>
-                    <h4>Marketing Department</h4>
-                </div>
-                <div class="card">
-                    <i class="fa-solid fa-calculator"></i>
-                    <h4>Finance Department</h4>
-                </div>
+    <div class="container" id="services">
+        <h2>Our Services</h2>
+        <div class="box-grid">
+            <div class="box">
+                <img src="https://cdn-icons-png.flaticon.com/512/2331/2331970.png" alt="Service Icon">
+                <p>Virtual office for management</p>
             </div>
-        </section>
-
-        <!-- OFFERS -->
-        <section id="offers">
-            <h3 class="section-title">Offers</h3>
-            <div class="card-grid">
-                <div class="card">
-                    <i class="fa-solid fa-gift"></i>
-                    <h4>Free for one month</h4>
-                    <p>No cards needed</p>
-                </div>
-                <div class="card">
-                    <i class="fa-solid fa-dollar-sign"></i>
-                    <h4>$9 Monthly</h4>
-                    <p>After first free month</p>
-                </div>
+            <div class="box">
+                <img src="https://cdn-icons-png.flaticon.com/512/9068/9068679.png" alt="Service Icon">
+                <p>Virtual office for marketing</p>
             </div>
-        </section>
-
-        <!-- BENEFITS -->
-        <section id="benefits">
-            <h3 class="section-title">Benefits</h3>
-            <div class="card-grid">
-                <div class="card">
-                    <i class="fa-solid fa-building"></i>
-                    <h4>No Physical Office Needed</h4>
-                </div>
-                <div class="card">
-                    <i class="fa-solid fa-folder"></i>
-                    <h4>Store Financial Documents</h4>
-                </div>
-                <div class="card">
-                    <i class="fa-solid fa-file-signature"></i>
-                    <h4>Prepare Accounting Cycle</h4>
-                </div>
-                <div class="card">
-                    <i class="fa-solid fa-chart-line"></i>
-                    <h4>Financial Analysis</h4>
-                </div>
-                <div class="card">
-                    <i class="fa-solid fa-chart-pie"></i>
-                    <h4>Marketing Reports & Strategies</h4>
-                </div>
-                <div class="card">
-                    <i class="fa-solid fa-briefcase"></i>
-                    <h4>Management Reports & Strategies</h4>
-                </div>
+            <div class="box">
+                <img src="https://cdn-icons-png.flaticon.com/512/8291/8291579.png" alt="Service Icon">
+                <p>Virtual office for finance department</p>
             </div>
-        </section>
-
+        </div>
     </div>
 
-    <footer>
-        Consistent Business Assistant | Keep Going Forward
-    </footer>
+    <div class="container" id="benefits" style="margin-top: 80px;">
+        <h2>Benefits</h2>
+        <div class="box-grid">
+            <div class="box">
+                <img src="https://cdn-icons-png.flaticon.com/512/1040/1040230.png" alt="Benefit Icon">
+                <p>No need of physical office</p>
+            </div>
+            <div class="box">
+                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135675.png" alt="Benefit Icon">
+                <p>Store your financial documents</p>
+            </div>
+            <div class="box">
+                <img src="https://cdn-icons-png.flaticon.com/512/3063/3063869.png" alt="Benefit Icon">
+                <p>Prepare accounting cycle by input journal entry</p>
+            </div>
+            <div class="box">
+                <img src="https://cdn-icons-png.flaticon.com/512/2721/2721268.png" alt="Benefit Icon">
+                <p>Financial Analysis</p>
+            </div>
+            <div class="box">
+                <img src="https://cdn-icons-png.flaticon.com/512/1161/1161388.png" alt="Benefit Icon">
+                <p>Marketing reports and development strategies</p>
+            </div>
+            <div class="box">
+                <img src="https://cdn-icons-png.flaticon.com/512/4301/4301714.png" alt="Benefit Icon">
+                <p>Management reports and development strategies</p>
+            </div>
+        </div>
+    </div>
 
-    <script>
-        document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const section = document.querySelector(this.getAttribute('href'));
-                if(section) {
-                    window.scrollTo({ top: section.offsetTop - 60, behavior: 'smooth' });
-                }
-            });
-        });
-    </script>
+    <div class="container" id="offers" style="margin-top: 80px; margin-bottom: 80px;">
+        <h2>Offers</h2>
+        <div class="box-grid">
+            <div class="box">
+                <img src="https://cdn-icons-png.flaticon.com/512/833/833593.png" alt="Offer Icon">
+                <p>Free for one month, no cards needed</p>
+            </div>
+            <div class="box">
+                <img src="https://cdn-icons-png.flaticon.com/512/1067/1067566.png" alt="Offer Icon">
+                <p>Pay 9 dollars monthly after one free month</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
